@@ -1,0 +1,45 @@
+{
+  "name": "chat-bot",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "mcp": "tsx mcp/server.ts",
+    "typecheck": "tsc --noEmit --incremental false",
+    "test": "npm run lint && npm run typecheck",
+    "test:integration": "npm run test:integration:env && npm run test:integration:database && npm run test:integration:chat-summarization && npm run test:integration:gpt-5.4-ping",
+    "test:integration:env": "tsx tests/integration/env-validation.ts",
+    "test:integration:database": "tsx tests/integration/database.ts",
+    "test:integration:chat-summarization": "tsx tests/integration/chat-summarization.ts",
+    "test:integration:gpt-5.4-ping": "tsx tests/integration/gpt-5.4-ping.ts",
+    "test:integration:gpt-5.4-context": "tsx tests/integration/gpt-5.4-context.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^2.6.0",
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "js-tiktoken": "^1.0.21",
+    "mermaid": "^11.15.0",
+    "next": "16.2.6",
+    "openai": "^6.39.0",
+    "pg": "^8.21.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/pg": "^8.20.0",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.6",
+    "tailwindcss": "^4",
+    "tsx": "^4.22.3",
+    "typescript": "^5"
+  }
+}
