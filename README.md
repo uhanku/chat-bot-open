@@ -16,7 +16,7 @@
   <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
 </p>
 
-Chat Bot Open is a chat assistant app for handling visitor conversations, capturing leads, and keeping longer threads organized with summaries and request limits. The repository includes the web app, the chat flow documentation, database setup, and supporting integration tests.
+Chat Bot Open is a chat assistant app for handling visitor conversations, capturing leads, and keeping longer threads organized with summaries and request limits.
 
 ## Startup
 
